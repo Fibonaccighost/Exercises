@@ -1,0 +1,34 @@
+.container{
+    background-color: blanchedalmond;
+    height: 60vh;
+    width: 80vh;
+    position: relative;
+}
+
+.ball{
+    background-color: blue;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    border-radius: 50%;
+    height: 80px;
+    width: 80px;
+    animation: animationX 3s linear 0s infinite, animationY 1s ease-out 0s infinite alternate;
+}
+
+@keyframes animationX {
+    from{
+        left: 0;
+    }
+    to{
+        left: 92%;
+    }
+}
+@keyframes animationY {
+    from{
+        bottom: 0;
+    }
+    to{
+        bottom: 50%;
+    }
+}

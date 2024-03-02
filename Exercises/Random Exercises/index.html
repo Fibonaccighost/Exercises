@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #container {
+            position: relative;
+            width: 80vw;
+            height: 40vh;
+            margin: auto;
+        }
+
+        .bgcolor {
+            background-color: aqua;
+        }
+
+        #btn {
+            position: relative;
+            display: block;
+            width: 10vw;
+            height: 5vh;
+            margin: auto;
+            border: 2px solid black;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="container" class="bgcolor">
+        Hellow
+    </div>
+    <button id="btn">Click Me</button>
+    <script>
+        // const container = document.getElementById("container")
+        // const button = document.getElementById("btn")
+
+        // button.addEventListener("click",function () {
+        //     container.classList.toggle("bgcolor")
+
+        // })
+
+        // function getrandomcolor() {
+        //         val1 = Math.floor(Math.random()*266)
+        //     val2 = Math.floor(Math.random()*266)
+        //     val3 = Math.floor(Math.random()*266)
+        //     return 'rgb('+val1+','+val2+','+val3+')'
+        //     }
+
+        // button.addEventListener("click",function(){
+        //     container.style.backgroundColor = getrandomcolor()
+        // })
+
+        // console.log(getrandomcolor())
+
+
+        // Function to start the timer from a specified time
+        function startTimer(durationInSeconds) {
+            let timerDisplay = document.getElementById("container");
+
+            let startTime = new Date().getTime();
+            let endTime = startTime + (durationInSeconds * 1000);
+
+            // Update the timer every second
+            let timerInterval = setInterval(function() {
+                let currentTime = new Date().getTime();
+                let remainingTime = endTime - currentTime;
+
+
+                if (remainingTime <= 0) {
+                    clearInterval(timerInterval);
+                    timerDisplay.innerText = 'Timer Ended !!';
+                    return;
+                }
+
+
+                let minutes = Math.floor((remainingTime % (1000 * 60 * 60)) / (1000 * 60));
+                let seconds = Math.floor((remainingTime % (1000 * 60)) / 1000);
+
+                timerDisplay.innerText = 'Time Remaining: '+minutes+ 'm '+seconds+ 's';
+
+
+            }, 1000);
+
+        }
+
+        startTimer(5 * 60);
+
+    </script>
+</body>
+
+</html>

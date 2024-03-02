@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid</title>
+    <style>
+        @media screen and (max-width: 455px) {
+            .container {
+                grid-template-columns: auto;
+            }
+
+        }
+
+        @media screen and (min-width: 455px) {
+            .container {
+                grid-template-columns: repeat(3, auto);
+            }
+
+        }
+
+        .container {
+            border: 2px solid grey;
+            background-color: white;
+            border-radius: 5px;
+            display: grid;
+            gap: 20px;
+            justify-content: center;
+            justify-items: center;
+            align-items: center;
+        }
+
+        .box {
+            border: 2px solid grey;
+            background-color: gray;
+            border-radius: 5px;
+            text-align: center;
+            padding: 2%;
+
+        }
+
+        .bit32 {
+            border: 2px solid beige;
+            background-color: beige;
+            width: 45%;
+            height: 30%;
+            display: inline-block;
+            margin: 10% auto;
+        }
+
+        .bit64 {
+            border: 2px solid beige;
+            background-color: beige;
+            width: 45%;
+            height: 30%;
+            display: inline-block;
+            margin: 10% auto;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="heading">
+        Download UltraEdit v2023.2(released 12/15/2023) | Hotfix
+    </div>
+    <div class="container">
+        <div class="box" id="box1">
+            <div class="lang">English</div>
+            <div class="bit32">Download 32 bit</div>
+            <div class="bit64">Download 64 bit</div>
+        </div>
+        <div class="box" id="box2">
+            <div class="lang">Deutsch</div>
+            <div class="bit32">Download 32 bit</div>
+            <div class="bit64">Download 64 bit</div>
+        </div>
+        <div class="box" id="box3">
+            <div class="lang">Italiano</div>
+            <div class="bit32">Download 32 bit</div>
+            <div class="bit64">Download 64 bit</div>
+        </div>
+        <div class="box" id="box4">
+            <div class="lang">Español</div>
+            <div class="bit32">Download 32 bit</div>
+            <div class="bit64">Download 64 bit</div>
+        </div>
+        <div class="box" id="box5">
+            <div class="lang">français</div>
+            <div class="bit32">Download 32 bit</div>
+            <div class="bit64">Download 64 bit</div>
+        </div>
+        <div class="box" id="box6">
+            <div class="lang">Português brasileiro</div>
+            <div class="bit32">Download 32 bit</div>
+            <div class="bit64">Download 64 bit</div>
+        </div>
+        <div class="box" id="box7">
+            <div class="lang">日本</div>
+            <div class="bit32">Download 32 bit</div>
+            <div class="bit64">Download 64 bit</div>
+        </div>
+        <div class="box" id="box8">
+            <div class="lang">한국어</div>
+            <div class="bit32">Download 32 bit</div>
+            <div class="bit64">Download 64 bit</div>
+        </div>
+        <div class="box" id="box9">
+            <div class="lang">中国</div>
+            <div class="bit32">Download 32 bit</div>
+            <div class="bit64">Download 64 bit</div>
+        </div>
+        <div class="box" id="box10">
+            <div class="lang">中國</div>
+            <div class="bit32">Download 32 bit</div>
+            <div class="bit64">Download 64 bit</div>
+        </div>
+    </div>
+</body>
+
+</html>

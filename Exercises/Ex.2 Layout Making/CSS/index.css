@@ -1,0 +1,97 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: grey;
+}
+
+header{
+    position: sticky;
+    top: 0;
+}
+
+header nav{
+    border: 2px solid black;
+    position: sticky;
+    background-color: grey;
+
+}
+
+header nav ul{
+    display: flex;
+    list-style: none;
+    flex-wrap: wrap;
+    justify-content: center;
+
+}
+
+header nav ul li{
+    margin: 10px;
+    padding: 6px 25px;
+}
+
+header nav ul li a{
+    text-decoration: none;
+    color: white;
+}
+
+header nav ul li a:hover{
+    text-decoration: underline;
+}
+header nav ul li a:active{
+    text-decoration: underline;
+}
+
+.container{
+    border: 2px solid black;
+    width: 90vw;
+    margin: 10px auto;
+    text-align: center;
+    padding: 3vw;
+    background-color: aquamarine;
+}
+
+.boxs{
+    display: inline-block;
+    width: 35vw;
+    margin: 5px 2vw;
+    height: 400px;
+    border: 2px solid black;
+    padding: 5px 2vw;
+}
+
+#box1, #box2{
+    background-color: yellowgreen;
+}
+
+.content{
+    border: 2px solid black;
+    margin: 10px 10vw;
+    padding: 5px 3vw;
+    font-size: 100px;
+    border-radius: 30px;
+    text-overflow: ellipsis;
+}
+
+.logo{
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    border: 2px solid #000;
+    border-radius: 50%;
+    position: fixed;
+    bottom: 3px;
+    right: 3px;
+    background-image: url(https://cdn.pixabay.com/photo/2016/12/27/13/10/logo-1933884_640.png);
+    background-size: cover;
+}
+
+footer{
+    border: 2px solid black;
+    height: auto;
+    font-size: 50px;
+    text-align: center;
+    margin: 20px 0px;
+}

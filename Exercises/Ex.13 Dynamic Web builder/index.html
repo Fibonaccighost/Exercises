@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 80vw;
+            position: relative;
+            margin: auto;
+            flex-wrap: wrap;
+            border: 2px solid black;
+            border-radius: 10px;
+            gap: 10px;
+        }
+
+        .card {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 60vw;
+            border: 2px solid black;
+            padding: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+
+    </div>
+    <script>
+        document.body.children[0].insertAdjacentHTML('beforeend', '<div class="card">CARD</div>');
+
+        let newdiv = document.createElement("div");
+        newdiv.innerHTML = "I Have Been <em>Inserted</em> using append";
+        newdiv.setAttribute("class", "card");
+        document.querySelector(".container").append(newdiv);
+
+        function createCard(title, cName, views, monthsold, duration, thumbnail){
+            // Finish this function
+        }
+
+
+        // createCard("Introduction to Backend | Sigma Web Dev video #2", "CodeWithHarry", 560000, 7, "31:22", "https://i.ytimg.com/vi/tVzUXW6siu0/hqdefault.jpg?sqp=-oaymwEcCPYBEIoBSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLACwWOixJVrKLFindK92kYMgTcQbw")
+
+
+
+    </script>
+</body>
+
+</html>
