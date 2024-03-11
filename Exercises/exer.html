@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Excerise</title>
+</head>
+
+<body>
+    <div class="text">
+
+    </div>
+    <script>
+        (async function main() {
+            async function delayedText1() {
+                setTimeout(() => {
+                    console.log("Hellow")
+                }, 2000);
+            }
+            async function delayedText2() {
+                setTimeout(() => {
+                    console.log("World")
+                }, 4000);
+            }
+            await delayedText1()
+
+
+            await delayedText2()
+        })()
+
+
+
+
+        let arr = [1, 6, 9, 5, 9, 2, 5, 5, 1, 5, 5, 6,9,5,6,7,5,2]
+        function average(...arr) {
+            let sum = 0;
+            for (const num of [...arr]) {
+                sum += num;
+            }
+            let count = arr.length
+            return sum / count
+        }
+        console.log(average(...arr))
+
+
+        async function delay(n) {
+            setTimeout((n) => {
+                console.log("Hoogaya Bhai");
+            }, n * 1000);
+        }
+        (async function main() {
+            delay(5)
+        })()
+        
+
+        function simpleIntrest(principle, rate, time) {
+            amount = principle*(1+rate*time)
+            return amount
+        }
+        console.log(simpleIntrest(100,10,1))
+    </script>
+</body>
+
+</html>
